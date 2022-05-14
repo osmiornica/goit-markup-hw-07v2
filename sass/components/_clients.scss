@@ -1,0 +1,23 @@
+.client__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.client__logo {
+    cursor: pointer;
+    padding: 16px 32px;
+    border: 1px solid $color-social-icon;
+    border-radius: 4px;
+    fill: $color-social-icon;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus{
+        fill: $color-accent;
+        border: 1px solid $color-accent;
+    }
+}
